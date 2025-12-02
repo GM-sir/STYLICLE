@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+@import "tailwindcss";
+
+@utility container {
+  
+  padding-inline: 120px;
+}
+
+@theme{
+    /* colors */
+
+
+    /* Font-Family */
+    --font-manrope: "Manrope", sans-serif;
+
+    /* break Point */
+  --breakpoint-*: initial;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 95rem;
+}
