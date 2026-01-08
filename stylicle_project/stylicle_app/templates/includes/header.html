@@ -1,0 +1,29 @@
+ {% load static %}
+ <nav class="w-[1920px] h-[100px]">
+      <div class="container flex max-w-[1920px] h-[50px] pt-[25px] pb-[22px]">
+        <div>
+          <img src="{% static 'stylicle_app/images/logo.svg' %}" alt="" />
+        </div>
+        
+        <ul class="h-[50px] items-center flex gap-[46px] ml-[830px] mr-9">
+          <li class="text-4 font-medium leading-6"><a href="/">Home</a></li>
+          <li class="text-4 font-medium leading-6"><a href="{% url "aboutus" %}">About Us</a></li>
+          <li class="text-4 font-medium leading-6">
+            <a href="{% url "contactus" %}">Contact Us</a>
+          </li>
+        </ul>
+        <div class="w-[77px] h-10 py-3.5 px-2 rounded-lg font-bold">
+          <span>EN</span>
+        </div>
+        <div class="w-[211px] h-[52px] flex gap-5">
+          <span
+            class="w-[91px] py-3.5 px-6 border border-black rounded-[5px] font-bold"
+            ><a href="{% url "user_login" %}"><button>Login</button></a></span
+          >
+          <span
+            class="w-[91px] py-3.5 px-6 text-white bg-black rounded-[5px] font-normal"
+            ><a href="sign_up"><button>signup</button></a></span
+          >
+        </div>
+      </div>
+    </nav>
